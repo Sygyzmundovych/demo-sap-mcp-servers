@@ -67,6 +67,28 @@ This is sufficient for a read-only proxy use case without importing the external
   - Then reference the generated CDS model under cds.requires.Northwind.model
 - For the simplest working app, the above proxy implementation is enough.
 
-## License
+# Vibe coding with Cline
+
+Initial prompt: "Create the simplest CAP service application for the external https://services.odata.org/northwind/northwind.svc/"
+
+Tokens: up **1.2m** down **67.3k** with GPT-5
+
+## Focus Chain List for Task 1758122301628
+
+<!-- Edit this markdown file to update your focus chain focusChain list -->
+<!-- Use the format: - [ ] for incomplete items and - [x] for completed items -->
+
+- [x] Analyze requirements
+- [x] Scaffold minimal CAP proxy (package.json, server.js, srv/*.cds, srv/*.js)
+- [x] Configure cds.requires for remote Northwind (odata-v2, URL)
+- [x] Install dependencies (including SAP Cloud SDK http client/resilience)
+- [x] Set service path to /northwind
+- [x] Start server and verify endpoints (Categories and Products)
+- [x] Provide README with run instructions and notes
+
+<!-- Save this file and the focusChain list will be updated in the task -->
+
+
+# License
 
 Sample use only.
