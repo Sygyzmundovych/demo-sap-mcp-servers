@@ -1,0 +1,30 @@
+{
+  "name": "northwind-cap",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simplest CAP service app consuming external Northwind OData V2",
+  "scripts": {
+    "start": "node server.js",
+    "watch": "cds watch",
+    "import:northwind": "cds import srv/external/Northwind.xml --as cds"
+  },
+  "dependencies": {
+    "@sap-cloud-sdk/connectivity": "^4.1.1",
+    "@sap-cloud-sdk/http-client": "^4.1.1",
+    "@sap-cloud-sdk/resilience": "^4.1.1",
+    "@sap/cds": "^7"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "cds": {
+    "requires": {
+      "Northwind": {
+        "kind": "odata-v2",
+        "credentials": {
+          "url": "https://services.odata.org/V2/Northwind/Northwind.svc/"
+        }
+      }
+    }
+  }
+}
