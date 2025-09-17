@@ -1,0 +1,41 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# SAP CAP
+.env
+*.sqlite
+*.db
+/gen/
+/.cdsdeploy/
+/.cds-pg/
+/.cds-dyn/
+/.cds-services/
+/.cds-build/
+/.cds-out/
+/.cds-compile/
+/.cds-cache/
+/.cds-migrations/
+/.cds-pg-migrations/
+/.cds-pg-backup/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Coverage
+coverage/
+
+# Misc
+*.tgz
+*.zip
+*.tar.gz
