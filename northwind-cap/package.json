@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "watch": "cds watch",
-    "import:northwind": "cds import srv/external/Northwind.xml --as cds"
+    "import:northwind": "cds import srv/external/Northwind.xml --as cds",
+    "watch-northwind-products": "cds watch --open nw.northwindproducts/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "dependencies": {
     "@sap-cloud-sdk/connectivity": "^4.1.1",
@@ -26,5 +27,16 @@
         }
       }
     }
-  }
+  },
+  "workspaces": [
+    "app/*"
+  ],
+  "devDependencies": {
+    "@sap/cds-dk": "^8.9.9",
+    "cds-plugin-ui5": "^0.13.0",
+    "sqlite3": "^5.1.7"
+  },
+  "sapux": [
+    "app/northwind-products"
+  ]
 }
